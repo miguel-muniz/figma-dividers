@@ -1,7 +1,8 @@
 const DIVIDER_NAME = 'Divider';
+const DIVIDER_NAME_LOWERCASE = DIVIDER_NAME.toLowerCase();
 
 function isDividerNode(node: SceneNode): node is FrameNode {
-  return node.type === 'FRAME' && node.name === DIVIDER_NAME;
+  return node.type === 'FRAME' && node.name.toLowerCase() === DIVIDER_NAME_LOWERCASE;
 }
 
 function closeWithMessage(message: string): void {

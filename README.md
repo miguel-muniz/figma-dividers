@@ -1,14 +1,24 @@
-# Figma Dividers
+# Dividers
+A tiny, no-UI Figma plugin that organizes dividers between siblings in a selected frame.
+<https://www.figma.com/community/plugin/1638707849539508844>
 
-A tiny no-UI Figma plugin that syncs divider layers inside a selected frame.
+## Details
 
-## Behavior
+### Usage
+1. Select a frame that has multiple children, with at least one direct child frame named Divider
+2. Run the plugin
 
-1. Select one frame.
-2. The selected frame must include at least one direct child frame named `Divider`.
-3. Run the plugin.
+### Behavior
+1. Adds missing dividers by duplicating the first `Divider` frame
+2. Deletes extra `Divider` frames from the end
+3. Sorts the remaining `Divider` frames, including customized ones, so there is one `Divider` between each sibling
 
-The plugin treats every direct child that is not a frame named `Divider` as content. For `n` content children, it keeps exactly `n - 1` dividers, removes extra dividers from the end, duplicates the first `Divider` frame when more are needed, and reorders the children so each content sibling has a divider between it and the next content sibling.
+### Limitations
+- Only works on one selected frame at a time
+- Dividers before the first item and after the last item aren't supported. You can make them on your own, just use a different layer name
+
+### Pricing
+- This plugin is and will always be completely free
 
 ## Development
 
