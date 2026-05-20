@@ -20,6 +20,9 @@ A tiny, no-UI Figma plugin that organizes dividers between siblings in a selecte
 ### Pricing
 - This plugin is and will always be completely free
 
+### Source code
+- Available at <https://github.com/miguel-muniz/figma-dividers>
+
 ## Development
 
 Install dependencies:
